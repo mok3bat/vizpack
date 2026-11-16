@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vizpack Example</title>
+<link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="boot" id="boot" hidden></div>
+  <div class="bar-top">
+    <h1>Regional Sales</h1>
+    <span class="tier mono" id="tier">…</span>
+  </div>
+  <div class="ctx mono" id="ctx">loading…</div>
+
+  <div class="kpis">
+    <div class="kpi"><div class="l">Revenue</div><div class="v mono" id="kRev">—</div></div>
+    <div class="kpi"><div class="l">Orders</div><div class="v mono" id="kOrders">—</div></div>
+    <div class="kpi"><div class="l">Units</div><div class="v mono" id="kUnits">—</div></div>
+    <div class="kpi"><div class="l">Avg order</div><div class="v mono" id="kAvg">—</div></div>
+  </div>
+
+  <div class="chips" id="chips"></div>
+
+  <div class="card">
+    <h2>Revenue by category</h2>
+    <svg id="bar" viewBox="0 0 640 240" role="img" aria-label="Revenue by category bar chart"></svg>
+  </div>
+
+  <footer>Built with <b>Vizpack</b> · pure-JS over a bundled snapshot · one codebase, every tier.</footer>
+</div>
+
+<script src="src/tableau.extensions.1.latest.min.js"></script>
+<script src="src/snapshot-data.js"></script>
+<script src="src/engine.js"></script>
+<script src="src/app.js"></script>
+</body>
+</html>

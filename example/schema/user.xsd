@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Stub for the Tableau "user" namespace, which the official TWB XSD imports
+     without a schemaLocation. Defines the one attribute group the TWB schema
+     references, accepting any user:* attribute without validation. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.tableausoftware.com/xml/user"
+           elementFormDefault="qualified">
+  <xs:attributeGroup name="UserAttributes-AG">
+    <xs:anyAttribute namespace="##targetNamespace" processContents="skip"/>
+  </xs:attributeGroup>
+</xs:schema>

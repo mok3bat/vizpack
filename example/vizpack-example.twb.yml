@@ -1,0 +1,31 @@
+# Vizpack example — host workbook for the data app.
+# The worksheet hosts the viz extension; the datasource is the local sample CSV.
+# The app itself reads a bundled JS snapshot (src/snapshot-data.js), so this datasource
+# is just a valid host for the extension (and the live-upgrade path, if you add one).
+twb_as_code: 1
+
+workbook:
+  name: Vizpack Example
+  compat: modern
+
+datasources:
+  sales:
+    caption: Regional Sales
+    connection:
+      type: csv
+      file: Data/sample.csv
+    columns:
+      date: date
+      region: string
+      category: string
+      units: integer
+      revenue: real
+
+sheets:
+  App:
+    title: Regional Sales
+    source: sales
+    extension:
+      trex: vizpack-example.trex
+      encodings:
+        field: sum(revenue)   # proves the shelf wiring to the local datasource

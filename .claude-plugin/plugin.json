@@ -1,0 +1,17 @@
+{
+  "name": "vizpack",
+  "version": "1.0.0",
+  "description": "Build a Tableau data app from a sample dataset — plain JS over a bundled snapshot. It opens and works in Tableau Desktop, and on approval packages into one self-contained, site-publishable workbook (bundled in the workbook, nothing to safe-list) that the user publishes manually. Ships a `vizpack` skill and a runnable reference app.",
+  "author": {
+    "name": "Vizpack contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "tableau",
+    "data-app",
+    "viz-extension",
+    "trex",
+    "tableaulocalext",
+    "dashboard"
+  ]
+}
